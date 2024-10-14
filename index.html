@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#" id="scroll-to-top">Accueil</a></li>
+            <li><a href="pages/aboutme.html">À propos</a></li>
+            <li><a href="#skills">Compétences</a></li>
+            <li><a href="#projects">Projets</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <section id="top">
+
+        <div class="intro">
+            <h1 class="dynamic-text">Bonjour ! Je suis Jarode Pottin</h1>
+            <p>Étudiant en MMI, bienvenue sur mon portfolio</p>
+        </section>
+            <a href="#skills" class="btn">Voir mes compétences</a>
+        </div>
+        <!-- Bouton pour descendre doucement -->
+        <a href="#skills" class="scroll-down"></a>
+    </header>
+
+    <!-- Texte animé -->
+    <section id="animated-text" class="animated-text-section">
+        <h2 id="code-text"></h2>
+    </section>
+
+    <!-- Compétences -->
+    <section id="skills">
+        <br>
+        <h2>Mes Compétences : </h2>
+        <div class="skills-container">
+            <ul>
+                <li>Communication</li>
+                <li>Design (suite Adobe)</li>
+                <li>HTML, CSS, JS, MySQL, jQuery</li>
+                <li>Utilisation de diverses intelligences artificielles</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Projets avec des cartes -->
+    <section id="projects">
+        <br>
+        <h2>Mes différents projets</h2>
+        <div class="project-carousel">
+            <div class="card" onclick="window.open('pages/Communication.html')">
+                <img src="images/pexel1.jpg" alt="Projet 1">
+                <div class="card-content">
+                    <h3>Communication</h3>
+                    <p>Un projet intéressant basé sur ...</p>
+                </div>
+            </div>
+            <div class="card" onclick="window.open('pages/dev-web.html')">
+                <img src="images/pexel3.jpg" alt="Projet 2">
+                <div class="card-content">
+                    <h3>Developpement Web</h3>
+                    <p>Un autre projet passionnant ...</p>
+                </div>
+            </div>
+            <div class="card" onclick="window.open('pages/Design.html')">
+                <img src="images/pexel.jpg" alt="Projet 3">
+                <div class="card-content">
+                    <h3>Design</h3>
+                    <p>Ce projet utilise ...</p>
+                </div>
+            </div>
+            
+
+        </div>
+    </section>
+
+    <!-- Formulaire de contact -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <form id="contact-form">
+            <div>
+                <label for="name-input">Nom:</label>
+                <input type="text" id="name-input" name="name" required>
+            </div>
+            <div>
+                <label for="email-input">Email:</label>
+                <input type="email" id="email-input" name="email" required>
+            </div>
+            <div>
+                <label for="message-input">Message:</label>
+                <textarea id="message-input" name="message" required></textarea>
+            </div>
+            <button type="submit" class="btn">Envoyer</button>
+        </form>
+    </section>
+    <footer>
+        <div class="footer-container">
+            <div class="social-media">
+                <a href="https://www.instagram.com/jarode_24" target="_blank" aria-label="Instagram">
+                    <img src="images/insta.png" alt="Instagram" />
+                </a>
+                <a href="https://www.linkedin.com/in/Jarode-Pottin" target="_blank" aria-label="LinkedIn">
+                    <img src="images/linkdin.png" alt="LinkedIn" />
+                </a>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2024 Jarode Pottin. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script/script.js"></script>
+</body>
+</html>
+
